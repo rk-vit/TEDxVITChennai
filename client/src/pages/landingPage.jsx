@@ -1,6 +1,6 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
-import './landingPage.css';
+import './LandingPage.css';
 
 function WelcomeText() {
   // Function to scroll down smoothly
