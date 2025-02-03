@@ -1,0 +1,23 @@
+/* OurDepartments.css */
+.our-departments {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .our-departments h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color:  rgb(73, 73, 73); /* TED red */
+  }
+  
+  .departments-grid {
+    display:flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: start;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+  }
+  

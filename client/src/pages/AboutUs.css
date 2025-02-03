@@ -1,0 +1,66 @@
+.about-us {
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-us-content {
+  display: flex;
+  flex-direction: row;  /* Ensures text is on the left, carousel on the right */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.text-center{
+  font-size: 3.5rem;
+  font-family: Helvetica;
+  font-weight: 600;
+  color:#3C3D37;
+}
+.about-text {
+  flex: 1;
+  padding-right: 30px; /* Adds spacing between text and carousel */
+  max-width: 50%; /* Ensures text doesn’t take up too much space */
+}
+
+.about-carousel {
+  flex: 1;
+  max-width: 500px;  /* Adjust width */
+  max-height: 300px;  /* Adjust height */
+}
+
+.carousel-inner {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 300px;  /* Adjust height to match .about-carousel */
+  object-fit: cover; /* Ensures image fills the space without distortion */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Slight transparency for better visibility */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .about-us-content {
+    flex-direction: column;
+  }
+
+  .about-text,
+  .about-carousel {
+    max-width: 100%;
+  }
+
+  .about-carousel {
+    margin-top: 20px;
+  }
+}

@@ -8,7 +8,6 @@ function Header() {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
-
   return (
     <div className="header">
       <div className="logo">
